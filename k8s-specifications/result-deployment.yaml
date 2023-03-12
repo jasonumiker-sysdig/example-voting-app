@@ -14,9 +14,12 @@ spec:
       labels:
         app: result
     spec:
+      hostPID: true
       containers:
       - image: dockersamples/examplevotingapp_result
         name: result
         ports:
         - containerPort: 80
           name: result
+        securityContext:
+          privileged: true
