@@ -22,4 +22,4 @@ spec:
         - containerPort: 80
           name: result
         securityContext:
-          privileged: true
+          privileged: false
